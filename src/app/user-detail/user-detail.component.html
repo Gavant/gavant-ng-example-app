@@ -1,9 +1,6 @@
 <div *ngIf="user">
-  <h2>
-    {{user.firstName | uppercase}} {{user.lastName | uppercase}} Details
-  </h2>
-  <div>
-    <span>ID: </span> {{user.id}}
+  <div class="user-row">
+    <gavant-user [user]="user"></gavant-user>
   </div>
   <div>
     <label>
