@@ -9,13 +9,13 @@ import { User } from './user';
 export class InMemoryDataService implements InMemoryDbService {
   createDb() {
     const users = [
-      { id: 12, firstName: 'Alan', lastName: 'DiTaxio' },
-      { id: 13, firstName: 'Adam', lastName: 'Baker' },
-      { id: 14, firstName: 'Jimbo', lastName: 'Bronson' },
-      { id: 15, firstName: 'Gabriella', lastName: 'Spain' },
-      { id: 11, firstName: 'Bill', lastName: 'D.' },
-      { id: 16, firstName: 'Bill', lastName: 'M.' },
-      { id: 17, firstName: 'Bill', lastName: '$' }
+      { id: 12, firstName: 'Alan', lastName: 'DiTaxio', emailAddress: 'alan@example.com'},
+      { id: 13, firstName: 'Adam', lastName: 'Baker', emailAddress: 'adam@example.com'},
+      { id: 14, firstName: 'Jimbo', lastName: 'Bronson', emailAddress: 'jimbo@example.com'},
+      { id: 15, firstName: 'Gabriella', lastName: 'Spain', emailAddress: 'gabriella@example.com'},
+      { id: 11, firstName: 'Bill', lastName: 'D.', emailAddress: 'billd@example.com'},
+      { id: 16, firstName: 'Bill', lastName: 'M.', emailAddress: 'billm@example.com'},
+      { id: 17, firstName: 'Bill', lastName: '$', emailAddress: 'billmoney@example.com' }
     ];
     return {users};
   }
